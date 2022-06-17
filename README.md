@@ -8,7 +8,7 @@ Unfortunately, in fact `env`-file syntax is more complicated than it seems, so c
 My goal is to do so somehow in future but I think plugin is already good enought to use in most of basic cases.
 
 Currently available highlighting:
-* line and inline comments;
+* comments;
 * keys;
 * `export`;
 * values: 
@@ -20,14 +20,8 @@ Currently available highlighting:
 * string interpolation `${myvar}`;
 
 TODO and known issues:
-* unquoted string values are not highlighted as string;
-  * quotes inside unquoted strings are not escaped (highlighted substring inside not highlighted string);
 * in unquoted string values, word + `=` are showed as inlined key;
-* inside any quoted strings interpolations and literals are not highlighted;
-* numeric values containing more than 1 decimal separator are not highlighted as string;
-* literals used as keys must be highlighted as keys, not literals;
-* quoted strings used as keys must be highlighted as keys, not strings;
-* escaped literals must not be used keys;
+* escaped literals must not be used as keys;
 * ...
 
 You can use `test.env` file to check how plugin works.
